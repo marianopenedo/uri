@@ -10,17 +10,9 @@ int main ()
     scanf ("%lf", &C);
 
     z = A*2;
-    
-    if (A == 0.0)
-    
-    {
-        printf ("Impossivel calcular\n");
-        return 0;
-    }
-
-   x = (B*B-4*A*C);
-    
-    if (x < 0)
+    x = (B*B-4*A*C);
+   
+    if (A == 0.0 || x < 0)
     {
         printf ("Impossivel calcular\n");
         return 0;
